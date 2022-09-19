@@ -1,0 +1,139 @@
+body {
+    background-image: url(../assets/background.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #01111e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
+
+.header .profile{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+    animation: fromTop .7s .2s backwards;
+}
+
+.header .profile:hover{
+    transform: scale(1.1);
+}
+
+.header .profile img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+.main .card{
+    color: #fff;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+    animation: fromBottom .7s backwards;
+}
+
+.main .card:nth-child(1){
+    animation-delay: 0;
+}
+
+.main .card:nth-child(2){
+    animation-delay: .4s;
+}
+
+.main .card:nth-child(3){
+    animation-delay: .8s;
+}
+
+.card .container{
+    background-color: #262629;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+.card .description{
+    letter-spacing: -0.18px;
+    color: #C1C1C1;
+}
+
+.card ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.card ul li{
+    transition: transform .3s;
+}
+
+.card ul li:hover{
+    transform: scale(1.1);
+}
+
+.contents img{
+    width: 100px;
+}
+
+.social-list a{
+    color: #fff;
+    font-size: 30px;
+}
+
+.social-list a .fa-instagram:hover{
+    color: #fc4447;
+}
+
+.social-list a .fa-facebook-square:hover{
+    color: dodgerblue;
+}
+
+.social-list a .fa-linkedin:hover{
+    color: #5CC2E2;
+}
+
+.social-list a .fa-github-square:hover{
+    color: darkslategray;
+}
+
+@keyframes fromTop{
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+        
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
