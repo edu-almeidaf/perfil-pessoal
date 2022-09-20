@@ -137,3 +137,13 @@ body {
         transform: translateY(0);
     }
 }
+
+/* ==== Swiper ==== */
+section{
+    overflow: hidden;
+}
+
+.card .contents{
+    flex-wrap: nowrap;
+    gap: 0;
+}
